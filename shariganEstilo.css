@@ -23,4 +23,280 @@ body{
     transform: rotate(-1800deg); /* irá rodar o sharingan*/
     animation: rotation 7s cubic-bezier(.66,0,.48,.91) infinite alternate; /*irá rodar o sharigan */
 }
+/*Para a rotação */
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-1080deg);
+    }
+    100%{
+        transform: rotate(-1080deg);
+    }
+}
 
+/* transição do sharigan */
+.sharigan:after{
+    content: '';
+
+    position: absolute;
+    top: 20%;
+    left: 20;
+
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 5px solid rgba(168, 10, 10, .7);
+    transition: .5s ease;
+    animation: sharingan_after 7s linear infinite alternate;
+}
+
+@keyframes sharigan_after{
+    0%{
+        content: '';
+        
+        position: absolute;
+        top: 20%;
+        left: 20%;
+
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+
+        border: 5 px solid rgba(168, 10, 10, .7);
+
+        transition: .5s ease;
+    }
+    60%{
+        content:'';
+
+        position: absolute;
+        top: 20%;
+        left: 20%;
+
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+
+        border: 5px rgba(168, 10, 10, .7);
+
+        transition: .5s ease;
+    }
+    70%{
+        content: '';
+
+        position: '';
+        top: 18%;
+        left: 18%;
+
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+
+        border:16px solid #1a1a1a;
+        transition: .5s ease;
+    }
+    100%{
+        content: '';
+    
+        position: absolute;
+        top: 18%;
+        left: 18%;
+
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+
+        border: 16px solid #1a1a1a;
+        transition: .5s ease;
+    }
+}
+
+/*add partes vermelha do sharigan e transação */
+.sharingan:before{
+    content: '';
+    top: 38.5%;
+    left: 38.5%;
+
+    position: absolute;
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    z-index: 10;
+
+    background-color: #1a1a1a;
+    border: 17px solid #D62424;
+
+    transition: .5s ease;
+
+    animation: sharingan_before 7s linear infinite alternate;
+
+}
+
+
+@keyframes sharingan_before{
+    0%{
+        content: '';
+        top: 38.5%;
+        left: 38.5%;
+
+        position: absolute;
+
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+
+        z-index: 10;
+
+        background-color: #1a1a1a;
+        border: 17px solid #D62424;
+
+        transition: .5s ease;
+    }
+    65%{
+        top: 38.5%;
+        left: 38.5%;
+
+        position: absolute;
+
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+
+        z-index: 10;
+
+        background-color: #1a1a1a;
+        border: 17px solid #D62424;
+
+        transition: .5s ease;
+    }
+    70%{
+        content: '';
+        top: 37%;
+        left: 37%;
+
+        position: absolute;
+
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+
+        z-index: 10;
+
+        background-color: #1a1a1a;
+        border: 17px solid #D62424;
+        transition: .5s ease;
+    }
+    100%{
+        content: '';
+        top: 37%;
+        left: 37%;
+
+        position: absolute;
+
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+
+        z-index: 10;
+
+        background-color: #1a1a1a;
+        border: 17px solid #D62424;
+        transition: .5s ease;
+    }
+}
+
+/* traço izuna parte 1 */
+.izuna1{
+    position: absolute;
+    top: 60px;
+    left: 220px;
+
+    width: 100px;
+    height: 70px;
+
+    background-color: #1a1a1a;
+
+    transform: rotate(-205deg);
+    transition: .5s ease;
+
+    opacity: 1;
+
+    animation: izuna1 7s linear infinite alternate;
+}
+
+@keyframes izuna1{
+    0%{
+        opacity: 1;
+
+        position: absolute;
+        top: 75px;
+        left: 220px;
+
+        width: 5px;
+        height: 70px;
+
+        z-index: -1;
+
+        background-color: #D62424;
+
+        transition: .5s ease;
+    }
+    50%{
+        background-color: #D62424;
+    }
+    65%{
+        opacity: 1;
+
+        position: absolute;
+        top: 75px;
+        left: 220px;
+
+        width: 5px;
+        height: 70px;
+
+        z-index: -1;
+
+        background-color: #1a1a1a;
+
+        transition: .5s ease;
+    }
+    
+    75%{
+        position: absolute;
+        top: 60px;
+        left: 220px;
+
+        width: 100px;
+        height: 70px;
+
+        background-color: #1a1a1a;
+
+        transform: rotate(-205deg);
+        transition: .5s ease;
+
+        opacity: 1;
+    }
+    100%{
+        position: absolute;
+        top: 60px;
+        left: 220px;
+
+        width: 100px;
+        height: 70px;
+
+        background-color: #1a1a1a;
+
+        transform: rotate(-205deg);
+        transition: .5s ease;
+
+        opacity: 1;
+    }
+
+}
