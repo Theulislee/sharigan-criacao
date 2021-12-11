@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sharigan{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #D62424;
+    transform: rotate(-1800deg); /* irá rodar o sharingan*/
+    animation: rotation 7s cubic-bezier(.66,0,.48,.91) infinite alternate; /*irá rodar o sharigan */
+}
+
