@@ -300,3 +300,87 @@ body{
     }
 
 }
+
+/*parte 2 do izuna */
+
+.izuna2{
+    width: 100px;
+    height: 70px;
+
+    position: absolute;
+    top: 250px;
+    left: 100px;
+
+    background-color: #1a1a1a;
+
+    transform: rotate(-270deg);
+    transition: .5s ease;
+
+    opacity: 1;
+
+    animation: izuna2 7s linear infinite alternate;
+}
+
+@keyframes izuna2{
+    0%{
+        width: 5px;
+        height: 70px;
+
+        position: absolute;
+        top: 200px;
+        left: 150px;
+
+        background-color: #D62424;
+
+        opacity: 1;
+
+        transition: .5s ease;
+    }
+    50%{
+        background-color: #D62424;
+    }
+    65%{
+        width: 5px;
+        height: 70px;
+
+        position: absolute;
+        top: 200px;
+        left: 150px;
+
+        background-color: #1a1a1a;
+
+        opacity: 1;
+
+        transition: .5s ease;
+    }
+    75%{
+        width: 100px;
+        height: 70px;
+
+        position: absolute;
+        top: 250px;
+        left: 100px;
+
+        background-color: #1a1a1a;
+
+        transform: rotate(-270deg);
+        transition: .5s ease;
+
+        opacity: 1;
+    }
+    100%{
+        width: 100px;
+        height: 70px;
+
+        position: absolute;
+        top: 250px;
+        left: 100px;
+
+        background-color: #1a1a1a;
+
+        transform: rotate(-270deg);
+        transition: .5s ease;
+
+        opacity: 1;
+    }
+}
